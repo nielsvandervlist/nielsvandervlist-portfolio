@@ -1,45 +1,57 @@
-"use client";
-import React, {useEffect, useRef, useState} from 'react'
+'use client'
+import Circle from '@images/circle.png'
+import Kids from '@images/kids.svg'
+import Bespoke from '@images/bespoke.svg'
+import Dash from '@images/dash.png'
+import Project from '@components/projects/Project'
+import {useState} from 'react'
+import Link from 'next/link'
+import {AnimatePresence, motion} from 'framer-motion'
 
-export default function PinterestLayout({ children, rowHeight }) {
-    const childRefs = useRef(new Map());
-    const [layout, setLayout] = useState([]);
+export default function     PinterestLayout() {
 
-    useEffect(() => {
-        const layout = [];
-        let row = [];
-        let rowHeight = 0;
-        let rowWidth = 0;
-        React.Children.map(children, (child, index) => {
-            const ref = childRefs.current.get(child);
-            if (ref) {
-                const { clientWidth, clientHeight } = ref;
-                if (rowWidth + clientWidth > window.innerWidth) {
-                    layout.push(row);
-                    row = [];
-                    rowWidth = 0;
-                    rowHeight = 0;
-                }
-                row.push({ child, width: clientWidth, height: clientHeight });
-                rowWidth += clientWidth;
-                rowHeight = Math.max(rowHeight, clientHeight);
-            }
-        });
-        layout.push(row);
-        setLayout(layout);
-    }, [children]);
+    const [animate, setAnimate] = useState([
+        {
+            img: Circle,
+            label: 'website, social platform',
+            title: 'The Circle',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            link: 'the-circle',
+        },
+        {
+            img: Kids,
+            label: 'website, artificial intelligence',
+            title: 'Storymaker',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            link: 'storymaker',
+        },
+        {
+            img: Bespoke,
+            label: 'website, digital agency',
+            title: 'Bespoke web',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            link: 'bespoke-web',
+        },
+        {
+            img: Dash,
+            label: 'dashboard, crisis management',
+            title: 'Crisis Dashboard',
+            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            link: 'crisis-dashboard',
+        },
+    ])
 
-    return (
-        <div>
-            {layout.map((row, rowIndex) => (
-                <div key={rowIndex}>
-                    {row.map((column, columnIndex) => (
-                        <div key={columnIndex} ref={ref => childRefs.current.set(column.child, ref)}>
-                            {column.child}
-                        </div>
-                    ))}
-                </div>
-            ))}
-        </div>
-    );
+    return <div className={'projects'}>
+        {animate.map((project, index) => {
+            return <div key={index}>
+                        <Project
+                            img={project.img}
+                            label={project.label}
+                            title={project.title}
+                            text={project.text}
+                            link={project.link}
+                        />
+            </div>
+        })}
+    </div>
 }

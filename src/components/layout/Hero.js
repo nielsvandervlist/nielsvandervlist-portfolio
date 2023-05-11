@@ -1,0 +1,85 @@
+'use client'
+import Button from '@components/buttons/Button'
+import Image from 'next/image'
+import HeroImg from '@images/hero-img.svg'
+import {useScroll, motion, useTransform} from 'framer-motion'
+import {useRef} from 'react'
+import Bubble from '@components/transitions/Bubble'
+import {ParallaxProvider} from 'react-scroll-parallax'
+
+export default function Hero({children}) {
+
+    const cardVariants = {
+        offscreen: {
+            y: 300,
+            opacity: 0,
+        },
+        onscreen: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                delay: 0.5,
+                type: 'spring',
+                bounce: 0.4,
+                duration: 0.8,
+            },
+        },
+    }
+
+    const heroImg = {
+        offscreen: {
+            y: 300,
+            opacity: 0,
+        },
+        onscreen: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                type: 'spring',
+                bounce: 0.4,
+                duration: 0.8,
+            },
+        },
+    }
+
+    return <ParallaxProvider>
+        <div className={'relative'}>
+            <Bubble className={'right-1/4 bottom-40 z-20'} width={200} height={200} speed={15}/>
+            <Bubble className={'right-1/4 bottom-40 z-20'} width={100} height={100} speed={20}/>
+            <Bubble className={'right-1/4 bottom-40 z-20'} width={50} height={50} speed={30}/>
+            <motion.section
+                className={'hero relative pt-40 h-screen'}
+                initial="offscreen"
+                whileInView="onscreen"
+                viewport={{once: true, amount: 0.8}}
+            >
+                <div className={'flex flex-wrap justify-center'}>
+                    <div className={'relative z-20 flex-wrap flex'}>
+                        <motion.h2
+                            variants={cardVariants}
+                        >
+        <span className={'relative'}>
+            <span className={`text-[160px] font-semibold text-green-400 lowercase`}>Web</span>
+            <span
+                className={`text-[160px] font-semibold text-purple text-opacity-25 absolute left-[17px] lowercase`}>Web</span>
+        </span>
+                        </motion.h2>
+                        <motion.div variants={cardVariants} className={'wrapper relative ml-8'}>
+                            <h3 className={'font-semibold text-[53px] lowercase text-green-400 relative top-[70px]'}>Design</h3>
+                            <h3 className={'font-semibold text-[53px] lowercase text-purple text-opacity-25 relative -bottom-[37px]'}>Development</h3>
+                        </motion.div>
+                    </div>
+                    <div className={'relative "flex-[0_0_100%] -top-[70px]'}>
+                        <motion.div variants={heroImg} className={'relative z-20'}><Image src={HeroImg} alt={'hero'}/>
+                        </motion.div>
+                        <div
+                            className={'bg-lightgray w-[80%] h-[60%] h-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'}/>
+                    </div>
+                </div>
+                <div className={'flex justify-center'}>
+                    <Button href={'/'}>My projects</Button>
+                </div>
+            </motion.section>
+        </div>
+    </ParallaxProvider>
+}

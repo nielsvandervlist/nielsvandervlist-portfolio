@@ -12,6 +12,37 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontSize: {
+          'small': '10px'
+      },
+      colors: {
+        'text': '#494949',
+        'border': '#EDEDED',
+        'light-text': '#6D6D6D',
+        'purple': '#B605D7',
+        'green': {
+          200: '#B0FCE9',
+          400: '#76FFD8',
+          600: '#26F7C3',
+          800: '#069D78',
+
+        },
+        'lightgray': '#FAFAFA'
+      },
+      height: {
+        'card-small': '26px',
+        'card-medium': '33px',
+        'card-large': '45px',
+      },
+      width: {
+        'card': '250px',
+      },
+      gridTemplateColumns: {
+        'auto-fill': 'repeat(auto-fill, minmax(var(--card), 1fr))',
+      },
+      borderRadius: {
+        'card': '16px',
+      },
     },
   },
   plugins: [],

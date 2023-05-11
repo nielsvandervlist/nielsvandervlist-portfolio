@@ -1,0 +1,17 @@
+.btn {
+
+    span {
+        transition: 0.3s all ease-in-out;
+    }
+
+    &:hover {
+        span:last-child {
+            right: -20px;
+            bottom: -20px;
+        }
+        span:nth-child(2){
+            left: -20px;
+            top: -20px;
+        }
+    }
+}

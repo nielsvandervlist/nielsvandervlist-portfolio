@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export defaultfunction = ({ title, children }) => {
+export default function AccordionItem({ title, children }){
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleAccordion = () => {

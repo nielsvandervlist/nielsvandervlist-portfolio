@@ -1,0 +1,33 @@
+.projects {
+    .project {
+
+        &:first-child {
+            .project__img {
+                figure {
+                    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+                }
+            }
+        }
+        &:nth-child(2) {
+            .project__img {
+                figure {
+                    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+                }
+            }
+        }
+        &:nth-child(3) {
+            .project__img {
+                figure {
+                    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+                }
+            }
+        }
+        &:last-child {
+            .project__img {
+                figure {
+                    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+                }
+            }
+        }
+    }
+}
