@@ -6,6 +6,7 @@ import {useScroll, motion, useTransform} from 'framer-motion'
 import {useRef} from 'react'
 import Bubble from '@components/transitions/Bubble'
 import {ParallaxProvider} from 'react-scroll-parallax'
+import MotionTracker from '@components/containers/MotionTracker'
 
 export default function Hero({children}) {
 
@@ -53,16 +54,16 @@ export default function Hero({children}) {
                 whileInView="onscreen"
                 viewport={{once: true, amount: 0.8}}
             >
-                <div className={'flex flex-wrap justify-center'}>
-                    <div className={'relative z-20 flex-wrap flex'}>
+                <div className={'flex flex-col flex-wrap justify-center'}>
+                    <div className={'relative z-20 flex-wrap flex justify-center'}>
                         <motion.h2
                             variants={cardVariants}
                         >
-        <span className={'relative'}>
-            <span className={`text-[160px] font-semibold text-green-400 lowercase`}>Web</span>
-            <span
-                className={`text-[160px] font-semibold text-purple text-opacity-25 absolute left-[17px] lowercase`}>Web</span>
-        </span>
+                        <span className={'relative'}>
+                            <span className={`text-[160px] font-semibold text-green-400 lowercase`}>Web</span>
+                            <span
+                                className={`text-[160px] font-semibold text-purple text-opacity-25 absolute left-[17px] lowercase`}>Web</span>
+                        </span>
                         </motion.h2>
                         <motion.div variants={cardVariants} className={'wrapper relative ml-8'}>
                             <h3 className={'font-semibold text-[53px] lowercase text-green-400 relative top-[70px]'}>Design</h3>
@@ -70,7 +71,8 @@ export default function Hero({children}) {
                         </motion.div>
                     </div>
                     <div className={'relative "flex-[0_0_100%] -top-[70px]'}>
-                        <motion.div variants={heroImg} className={'relative z-20'}><Image src={HeroImg} alt={'hero'}/>
+                        <motion.div variants={heroImg} className={'relative z-20'}>
+                            <MotionTracker/>
                         </motion.div>
                         <div
                             className={'bg-lightgray w-[80%] h-[60%] h-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'}/>

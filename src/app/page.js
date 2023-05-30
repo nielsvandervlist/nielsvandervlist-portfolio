@@ -5,6 +5,7 @@ import Projects from '@components/layout/Projects'
 import Solutions from '@components/about/Solutions'
 import {ParallaxProvider} from 'react-scroll-parallax'
 import PatternLayout from '@components/containers/PatternLayout'
+import MotionTracker from '@components/containers/MotionTracker'
 
 export default function Home() {
     return (

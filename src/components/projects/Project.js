@@ -34,7 +34,7 @@ const ProjectSection = ({img, title, label, text, link}) => {
             style={{perspective: '1000px'}}
         >
             <motion.figure
-                className={'bg-green-200 h-[600px] w-[600px] relative'}
+                className={'bg-green-200 h-[300px] w-[300px] xl:h-[600px] xl:w-[600px] relative'}
                 style={{
                     rotateX: 0,
                     rotateY: 0,
