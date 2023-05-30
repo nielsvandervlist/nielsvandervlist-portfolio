@@ -9,8 +9,6 @@ function Item({ onMount, onUnmount, columnHeights, children }) {
 
     useEffect(() => {
 
-        console.log(ref.current.clientHeight)
-
         onMount(shortestColumnIndex, ref.current.clientHeight);
         return () => {
             onUnmount(shortestColumnIndex, ref.current.clientHeight);
