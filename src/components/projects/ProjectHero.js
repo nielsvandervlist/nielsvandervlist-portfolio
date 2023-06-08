@@ -2,8 +2,8 @@ import Image from 'next/image'
 import Label from '@components/text/Label'
 
 export default function ProjectHero({title, label, image}){
-    return <section className={'bg-white p-[20px] md:pt-[90px] md:pb-[40px] md:px-[90px] w-full grid grid-cols-12 relative overflow-hidden items-center'}>
-        <figure className={'col-span-6'}>
+    return <section className={'bg-white p-[20px] md:pt-[120px] md:pb-[40px] md:px-[90px] w-full grid grid-cols-12 relative overflow-hidden items-center'}>
+        <figure className={'col-span-6 flex justify-center'}>
             <Image src={image} alt={'hero-img'}/>
         </figure>
         <div className={'col-span-6 flex flex-wrap flex-col'}>
