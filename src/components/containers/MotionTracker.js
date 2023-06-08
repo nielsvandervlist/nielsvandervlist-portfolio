@@ -50,7 +50,7 @@ export default function MotionTracker(){
                     alt="3D Image"
                     className="w-full h-full rounded-lg"
                 />
-                <Image src={HeroImg} alt={'hero'}/>
+
             </motion.div>
         </div>
     );
