@@ -79,7 +79,7 @@ const ProjectSection = ({img, title, label, text, link}) => {
             <h2 className="text-text text-[28px] md:text-[48px] font-semibold">{title}</h2>
             <span className="text-xs uppercase font-light text-text tracking-widest">{label}</span>
             <span className="border-b mx-auto border-text w-[30px] block mt-4"/>
-            <p className="font-light text-sm text-text mt-8 tracking-wide leading-8 mb-12">{text}</p>
+            <p className="font-light text-sm text-text mt-4 md:mt-8 tracking-wide leading-8 mb-12">{text}</p>
             <Button href={link}>More info</Button>
         </motion.div>
     </motion.div></div>

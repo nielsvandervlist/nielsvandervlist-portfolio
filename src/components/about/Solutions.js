@@ -12,7 +12,7 @@ export default function Solutions(){
         </div>
         <div className={'col-span-12 md:col-span-5'}>
             <h3 className={'text-text text-[24px] font-semibold mb-8'}>We are a creative design and development studio that specializes in creating Laravel applications with Next.js. We offer a range of solutions on our website to help you bring your ideas to life.</h3>
-            <p className={'text-light-text font-light mb-20 leading-8'}> Overall, our goal is to create outstanding websites and applications that are tailored to your specific needs. Whether you are looking for a stunning website, a user-friendly application, or a seamless online payment system, our team is here to bring your vision to life.</p>
+            <p className={'text-light-text font-light md:mb-20 leading-8'}> Overall, our goal is to create outstanding websites and applications that are tailored to your specific needs. Whether you are looking for a stunning website, a user-friendly application, or a seamless online payment system, our team is here to bring your vision to life.</p>
         </div>
     </section>
 }

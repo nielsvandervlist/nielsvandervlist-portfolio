@@ -6,6 +6,7 @@ import Solutions from '@components/about/Solutions'
 import {ParallaxProvider} from 'react-scroll-parallax'
 import PatternLayout from '@components/containers/PatternLayout'
 import MotionTracker from '@components/containers/MotionTracker'
+import Contact from '@components/contact/Contact'
 
 export default function Home() {
     return (
@@ -17,6 +18,7 @@ export default function Home() {
             </div>
             <Solutions/>
             <Projects/>
+            <Contact/>
         </main>
     )
 }

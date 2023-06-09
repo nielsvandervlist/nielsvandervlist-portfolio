@@ -1,6 +1,8 @@
 'use client'
 import {useState} from 'react'
 import {motion} from 'framer-motion'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faRectangleXmark } from '@fortawesome/free-solid-svg-icons'
 
 export default function MenuButton() {
 
@@ -23,21 +25,21 @@ export default function MenuButton() {
                 initial={{ x: '100%' }}
                 animate={{ x: isOpen ? '0%' : '100%' }}
                 transition={{ duration: 0.3 }}
-                className="fixed inset-0 bg-gray-800 text-white flex flex-col items-center justify-center z-20"
+                className="fixed inset-0 bg-gray-50 text-text flex flex-col items-center justify-center z-20"
             >
                 <button
-                    className="absolute top-0 right-0 font-semibold text-text z-30"
+                    className="absolute top-4 right-4 font-semibold text-text z-30"
                     onClick={handleClick}
                 >
-                    Close
+                    <FontAwesomeIcon size="2x" icon={faRectangleXmark}/>
                 </button>
 
                 <div className="flex flex-col items-center justify-center h-full">
-                    <h2 className="text-4xl mb-8">Menu Items</h2>
-                    <ul>
-                        <li className="text-3xl">Item 1</li>
-                        <li className="text-3xl">Item 2</li>
-                        <li className="text-3xl">Item 3</li>
+                    <ul className={'text-center'}>
+                        <li className="text-3xl uppercase mb-8">Home</li>
+                        <li className="text-3xl uppercase mb-8">About</li>
+                        <li className="text-3xl uppercase mb-8">Projects</li>
+                        <li className="text-3xl uppercase mb-8">Contact</li>
                     </ul>
                 </div>
             </motion.div>

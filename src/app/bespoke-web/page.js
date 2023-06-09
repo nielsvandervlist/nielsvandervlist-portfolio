@@ -43,7 +43,7 @@ export default function Page() {
             <div className={'col-span-6 mb-4 md:mb-0'}>
                 <div className={'max-w-[500px]'}>
                     <h3 className={'text-text text-[24px] font-semibold mb-4 mt-10'}>Cutting-edge design</h3>
-                    <p className={'relative w-full text-light-text font-light leading-8 mb-10'}>In summary, Bespokeweb's website encapsulates the essence of our company: cutting-edge design, intuitive navigation, and a focus on personalized experiences. It reflects our commitment to crafting bespoke digital solutions that empower businesses and drive success.</p>
+                    <p className={'relative w-full text-light-text font-light leading-8 mb-10'}>In summary, Bespokeweb website encapsulates the essence of our company: cutting-edge design, intuitive navigation, and a focus on personalized experiences. It reflects our commitment to crafting bespoke digital solutions that empower businesses and drive success.</p>
                 </div>
             </div>
             <div className={'col-span-12 text-center my-8 md:my-0'}>

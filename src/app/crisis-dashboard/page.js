@@ -29,7 +29,7 @@ export default function Page() {
                 </figure>
                 <div className={'max-w-[500px]'}>
                     <h3 className={'text-text text-[24px] font-semibold mb-4 mt-10'}>Collaboration</h3>
-                    <p className={'relative w-full text-light-text font-light leading-8'}>and teamwork are at the core of CrisisCom's philosophy. The platform fosters seamless communication and coordination among team members, enabling organizations to respond to crises in a unified and effective manner. CrisisCom becomes an invaluable tool in fostering a culture of preparedness and equipping teams to mitigate reputational damage during critical moments.</p>
+                    <p className={'relative w-full text-light-text font-light leading-8'}>and teamwork are at the core of CrisisCom philosophy. The platform fosters seamless communication and coordination among team members, enabling organizations to respond to crises in a unified and effective manner. CrisisCom becomes an invaluable tool in fostering a culture of preparedness and equipping teams to mitigate reputational damage during critical moments.</p>
                 </div>
             </div>
             <div className={'col-span-6 mb-4 md:mb-0'}>
