@@ -11,7 +11,7 @@ const ProjectSection = ({img, title, label, text, link}) => {
 
     return <div><motion.div
         ref={ref}
-        className="grid grid-cols-12 gap-20 project mb-20 justify-center items-center"
+        className="md:grid grid-cols-12 gap-20 project mb-20 justify-center items-center"
         initial="hidden"
         animate={inView ? 'visible' : 'hidden'}
         variants={{
@@ -30,7 +30,7 @@ const ProjectSection = ({img, title, label, text, link}) => {
         }}
     >
         <motion.div
-            className={'col-span-6 project__img flex items-center justify-center'}
+            className={'col-span-12 md:col-span-6 project__img flex items-center justify-center'}
             style={{perspective: '1000px'}}
         >
             <motion.figure
@@ -60,7 +60,7 @@ const ProjectSection = ({img, title, label, text, link}) => {
             </motion.figure>
         </motion.div>
         <motion.div
-            className="col-span-6 project__text"
+            className="col-span-12 md:col-span-6 project__text md:text-left text-center mt-8 md:mt-0"
             variants={{
                 visible: {
                     opacity: 1,
@@ -76,9 +76,9 @@ const ProjectSection = ({img, title, label, text, link}) => {
                 },
             }}
         >
-            <h2 className="text-text text-[48px] font-semibold">{title}</h2>
+            <h2 className="text-text text-[28px] md:text-[48px] font-semibold">{title}</h2>
             <span className="text-xs uppercase font-light text-text tracking-widest">{label}</span>
-            <span className="border-b border-text w-[30px] block mt-4"/>
+            <span className="border-b mx-auto border-text w-[30px] block mt-4"/>
             <p className="font-light text-sm text-text mt-8 tracking-wide leading-8 mb-12">{text}</p>
             <Button href={link}>More info</Button>
         </motion.div>

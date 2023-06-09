@@ -12,11 +12,6 @@ const Header = () => {
             <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center ">
                 <Logo/>
             </div>
-            <div className="flex justify-end items-center md:hidden">
-                <button className="p-2">
-                    <FontAwesomeIcon icon={faBars} />
-                </button>
-            </div>
             <MenuButton/>
         </header>
     );
