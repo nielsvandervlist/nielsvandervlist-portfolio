@@ -14,5 +14,14 @@ export default function PatternLayout(){
         <Parallax translateX={[-25, 0]} easing={'easeInCubic'}>
             <Pattern />
         </Parallax>
+        <Parallax translateX={[-25, 0]} easing={'easeInCubic'}>
+            <Pattern />
+        </Parallax>
+        <Parallax translateX={[-25, 0]} easing={'easeInCubic'}>
+            <Pattern />
+        </Parallax>
+        <Parallax translateX={[-25, 0]} easing={'easeInCubic'}>
+            <Pattern />
+        </Parallax>
     </ParallaxProvider>
 }

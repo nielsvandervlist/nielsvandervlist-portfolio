@@ -5,8 +5,8 @@ import Accordion from '@components/about/Accordion'
 
 export default function Solutions(){
     return <section
-        className={'bg-lightgray py-8 px-[20px] md:py-[90px] md:px-[90px] w-full grid grid-cols-12 gap-x-0 md:gap-x-20 relative overflow-hidden'}>
-        <div className={'col-span-12'}><DoubleHeadingSmall className={'mb-8'}>Solutions</DoubleHeadingSmall></div>
+        className={'bg-white py-8 px-[20px] md:py-[90px] md:px-[90px] w-full grid grid-cols-12 gap-x-0 md:gap-x-20 relative overflow-hidden'}>
+        <h2 className={'col-span-12 text-text text-[48px] font-semibold mb-8'}>We offer multiple solutions</h2>
         <div className={'col-span-12 md:col-span-7 mb-10 md:mb-0'}>
             <Accordion/>
         </div>

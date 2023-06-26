@@ -13,9 +13,6 @@ export default function Home() {
         <main className="flex min-h-screen flex-col items-center justify-between">
             <Hero/>
             <Intro/>
-            <div className={'overflow-hidden relative w-full'}>
-                <PatternLayout/>
-            </div>
             <Solutions/>
             <Projects/>
             <Contact/>

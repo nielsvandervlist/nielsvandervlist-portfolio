@@ -21,6 +21,7 @@ module.exports = {
         'light-text': '#6D6D6D',
         'purple': '#B605D7',
         'green': {
+          100: '#E1FFF6',
           200: '#B0FCE9',
           400: '#76FFD8',
           600: '#26F7C3',
@@ -33,6 +34,9 @@ module.exports = {
         'card-small': '26px',
         'card-medium': '33px',
         'card-large': '45px',
+      },
+      boxShadow: {
+        '3xl': '0px 0px 12px 12px rgba(0,0,0,0.05)',
       },
       width: {
         'card': '250px',

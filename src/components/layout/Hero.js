@@ -7,25 +7,11 @@ import React, {useRef} from 'react'
 import Bubble from '@components/transitions/Bubble'
 import {ParallaxProvider} from 'react-scroll-parallax'
 import MotionTracker from '@components/containers/MotionTracker'
+import PatternLayout from '@components/containers/PatternLayout'
+import {faKiwiBird} from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 export default function Hero({children}) {
-
-    const cardVariants = {
-        offscreen: {
-            y: 300,
-            opacity: 0,
-        },
-        onscreen: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                delay: 0.5,
-                type: 'spring',
-                bounce: 0.4,
-                duration: 0.8,
-            },
-        },
-    }
 
     const heroImg = {
         offscreen: {
@@ -44,42 +30,25 @@ export default function Hero({children}) {
     }
 
     return <ParallaxProvider>
-        <div className={'relative'}>
-            <Bubble className={'right-1/4 bottom-40 z-20 hidden md:inline-block'} width={200} height={200} speed={15}/>
-            <Bubble className={'right-1/4 bottom-40 z-20 hidden md:inline-block'} width={100} height={100} speed={20}/>
-            <Bubble className={'right-1/4 bottom-40 z-20 hidden md:inline-block'} width={50} height={50} speed={30}/>
+        <div>
+            <div className={'overflow-hidden absolute left-0 right-0 w-full opacity-50'}>
+                <PatternLayout/>
+            </div>
             <motion.section
-                className={'hero relative md:pt-40 pt-16 pb-12 md:pb-0 md:h-screen'}
+                className={'hero relative flex justify-center items-center md:pb-0 md:h-screen pt-20'}
                 initial="offscreen"
                 whileInView="onscreen"
                 viewport={{once: true, amount: 0.8}}
             >
                 <div className={'flex flex-col flex-wrap justify-center'}>
-                    <div className={'relative z-20 flex-wrap flex justify-center'}>
-                        <motion.h2
-                            variants={cardVariants}
-                        >
-                        <span className={'relative'}>
-                            <span className={`text-[40px] md:text-[160px] font-semibold text-green-400 lowercase`}>Web</span>
-                            <span
-                                className={`text-[40px] md:text-[160px] font-semibold text-purple text-opacity-25 absolute left-[4px] md:left-[17px] lowercase`}>Web</span>
-                        </span>
-                        </motion.h2>
-                        <motion.div variants={cardVariants} className={'wrapper relative md:ml-8 ml-2'}>
-                            <h3 className={'font-semibold md:text-[53px] lowercase text-green-400 relative top-[12px] md:top-[70px]'}>Design</h3>
-                            <h3 className={'font-semibold md:text-[53px] lowercase text-purple text-opacity-25 relative md:-bottom-[37px]'}>Development</h3>
-                        </motion.div>
-                    </div>
                     <div className={'relative "flex-[0_0_100%] md:-top-[70px]'}>
-                        <motion.div variants={heroImg} className={'relative z-20'}>
+                        <motion.div variants={heroImg} className={'relative z-20 text-center'}>
                             <Image src={HeroImg} alt={'hero'}/>
+                            <p className={'uppercase text-text font-light tracking-widest mt-20'}>Niels van der
+                                Vlist <FontAwesomeIcon className={'text-xl mx-4'} icon={faKiwiBird}/> developer &
+                                designer</p>
                         </motion.div>
-                        <div
-                            className={'bg-lightgray w-[80%] h-[60%] h-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'}/>
                     </div>
-                </div>
-                <div className={'flex justify-center mt-20 md:mt-0'}>
-                    <Button href={'/'}>My projects</Button>
                 </div>
             </motion.section>
         </div>
