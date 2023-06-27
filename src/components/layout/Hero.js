@@ -35,7 +35,7 @@ export default function Hero({children}) {
                 <PatternLayout/>
             </div>
             <motion.section
-                className={'hero relative flex justify-center items-center md:pb-0 md:h-screen pt-20'}
+                className={'hero relative flex justify-center items-center md:pb-0 h-screen pt-20'}
                 initial="offscreen"
                 whileInView="onscreen"
                 viewport={{once: true, amount: 0.8}}
@@ -44,9 +44,9 @@ export default function Hero({children}) {
                     <div className={'relative "flex-[0_0_100%] md:-top-[70px]'}>
                         <motion.div variants={heroImg} className={'relative z-20 text-center'}>
                             <Image src={HeroImg} alt={'hero'}/>
-                            <p className={'uppercase text-text font-light tracking-widest mt-20'}>Niels van der
-                                Vlist <FontAwesomeIcon className={'text-xl mx-4'} icon={faKiwiBird}/> developer &
-                                designer</p>
+                            <p className={'uppercase text-text font-light tracking-widest mt-20 flex md:block flex-col gap-8'}><span>Niels van der
+                                Vlist</span> <FontAwesomeIcon className={'text-xl mx-4'} icon={faKiwiBird}/> <span>developer &
+                                designer</span></p>
                         </motion.div>
                     </div>
                 </div>

@@ -10,11 +10,11 @@ export default function Accordion() {
                     running on the internet. We ensure that your site is accessible to your audience and performs
                     smoothly.</p>
             </AccordionItem>
-            <AccordionItem title="CMS Craft">
+            <AccordionItem title="CMS implementations">
                 {/* CMS Craft content goes here */}
-                <p className={'text-light-text font-light leading-8'}>We also offer CMS Craft, a content management
+                <p className={'text-light-text font-light leading-8'}>We also offer CMS Craft, Wordpress, or others CMS is a content management
                     system that allows you to easily manage and update your websites content without any technical
-                    knowledge. With CMS Craft, you have full control over your websites text, images, and other
+                    knowledge. With this, you have full control over your websites text, images, and other
                     media.</p>
             </AccordionItem>
             <AccordionItem title="Web Development and Design">

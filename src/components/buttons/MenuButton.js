@@ -2,7 +2,8 @@
 import {useState} from 'react'
 import {motion} from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRectangleXmark } from '@fortawesome/free-solid-svg-icons'
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/link'
 
 export default function MenuButton() {
 
@@ -25,21 +26,21 @@ export default function MenuButton() {
                 initial={{ x: '100%' }}
                 animate={{ x: isOpen ? '0%' : '100%' }}
                 transition={{ duration: 0.3 }}
-                className="fixed inset-0 bg-gray-50 text-text flex flex-col items-center justify-center z-20"
+                className="fixed inset-0 bg-green-100 text-text flex flex-col items-center justify-center z-20"
             >
                 <button
                     className="absolute top-4 right-4 font-semibold text-text z-30"
                     onClick={handleClick}
                 >
-                    <FontAwesomeIcon size="2x" icon={faRectangleXmark}/>
+                    <FontAwesomeIcon size="2x" icon={faXmark}/>
                 </button>
 
                 <div className="flex flex-col items-center justify-center h-full">
                     <ul className={'text-center'}>
-                        <li className="text-3xl uppercase mb-8">Home</li>
-                        <li className="text-3xl uppercase mb-8">About</li>
-                        <li className="text-3xl uppercase mb-8">Projects</li>
-                        <li className="text-3xl uppercase mb-8">Contact</li>
+                        <li className="text-3xl font-medium uppercase mb-8"><Link href={'/'}>Home</Link></li>
+                        <li className="text-3xl font-medium uppercase mb-8"><Link href={'/about'}>About</Link></li>
+                        <li className="text-3xl font-medium uppercase mb-8"><Link href={'/projects'}>Projects</Link></li>
+                        <li className="text-3xl font-medium uppercase"><Link href={'/contact'}>Contact</Link></li>
                     </ul>
                 </div>
             </motion.div>

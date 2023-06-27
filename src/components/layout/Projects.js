@@ -8,6 +8,7 @@ import {AnimatePresence} from 'framer-motion'
 export default function Projects() {
 
     return <div className={'w-full overflow-hidden'}>
+        <h2 className={'px-4 mb-8 font-semibold text-text text-[24px] md:text-[60px]'}>Take a look at my recent projects</h2>
         <ParallaxProvider>
             <div className={'relative'}>
                 <Bubble className={'left-1/4 top-20 z-20 hidden md:inline-block'} width={200} height={200} speed={50}/>
