@@ -2,7 +2,7 @@ import AccordionItem from '@components/about/AccordionItem'
 
 export default function Accordion() {
     return (
-        <div className="mx-auto -ml-4">
+        <div className="    ">
             <AccordionItem title="Hosting">
                 {/* Hosting content goes here */}
                 <p className={'text-light-text font-light leading-8'}>One of the main services we provide is hosting,

@@ -14,7 +14,7 @@ export default function MenuButton() {
     }
 
     return (
-        <div className="md:relative absolute right-4 top-2">
+        <div className="md:relative absolute right-4">
             <button
                 className="font-semibold text-text z-10"
                 onClick={handleClick}
