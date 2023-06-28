@@ -9,11 +9,11 @@ import {faArrowRightLong} from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
 
 export default function Intro() {
-    
+
     const sentence = ['Hi!', 'My', 'name', 'is', 'Niels.', 'I\'m ', 'a', 'web\n', 'developer', 'designer', 'and', 'Digital', 'Nerd.']
 
     return <div className={'relative'}>
-        <video autoPlay muted className={'absolute inset-0 w-full h-full object-fill'} src={'https://cdn.pixabay.com/vimeo/361092071/jellyfish-26818.mp4?width=1280&hash=d698fa9612131908c152247464bbc5e998d670eb'}/>
+        <video autoPlay loop muted className={'absolute inset-0 w-full h-full object-fill'} src={'https://cdn.pixabay.com/vimeo/361092071/jellyfish-26818.mp4?width=1280&hash=d698fa9612131908c152247464bbc5e998d670eb'}/>
         <div className={'absolute inset-0 bg-green-600 opacity-50'}/>
         <motion.section
             initial="offscreen"
@@ -47,7 +47,6 @@ export default function Intro() {
                         })
                     }
                     </h3>
-                    <Link href={'/about'} className={'text-white font-light flex items-center text-[18px] uppercase tracking-widest'}>More about myself <FontAwesomeIcon className={'ml-4 text-[32px]'} icon={faArrowRightLong}/></Link>
                 </div>
             </div>
             <ParallaxProvider>
