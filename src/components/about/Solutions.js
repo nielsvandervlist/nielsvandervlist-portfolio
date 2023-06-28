@@ -3,9 +3,6 @@ import Accordion from '@components/about/Accordion'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faArrowRightLong} from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
-import background from '@images/bg.svg'
-import Image from 'next/image'
-import Banner from '@components/banner/Banner'
 
 export default function Solutions() {
     return <section
