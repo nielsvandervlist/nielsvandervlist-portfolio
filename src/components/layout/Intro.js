@@ -1,5 +1,5 @@
 'use client'
-import BG from '@images/profile.png'
+import BG from '@images/profile-pic.png'
 import Image from 'next/image'
 import {motion} from 'framer-motion'
 import {ParallaxProvider} from 'react-scroll-parallax'
@@ -48,14 +48,14 @@ export default function Intro() {
                         })
                     }
                     </h3>
-                    <Link href={'/about'} className={'text-white font-light flex items-center text-[18px]'}>More about myself <FontAwesomeIcon className={'ml-4 text-[32px]'} icon={faArrowRightLong}/></Link>
+                    <Link href={'/about'} className={'text-white font-light flex items-center text-[18px] uppercase tracking-widest'}>More about myself <FontAwesomeIcon className={'ml-4 text-[32px]'} icon={faArrowRightLong}/></Link>
                 </div>
             </div>
             <ParallaxProvider>
                 <div
                     className={'col-span-12 md:col-span-6 relative flex items-center justify-center order-1 mb-8 md:md-0'}>
                     <figure className={'relative flex items-center justify-center'}>
-                        <Image className={'w-2/4 md:w-auto'} src={BG} alt={'bg'}/>
+                        <Image className={'w-2/4 lg:w-[400px]'} src={BG} alt={'bg'}/>
                     </figure>
 
                 </div>

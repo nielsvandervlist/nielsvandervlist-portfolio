@@ -29,7 +29,7 @@ export default function Hero({children}) {
         },
     }
 
-    return <ParallaxProvider>
+    return <ParallaxProvider className={'snap-center'}>
         <div>
             <div className={'overflow-hidden absolute left-0 right-0 w-full opacity-50'}>
                 <PatternLayout/>
