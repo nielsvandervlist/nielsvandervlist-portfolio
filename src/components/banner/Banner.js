@@ -1,6 +1,4 @@
 import {ParallaxBanner, ParallaxProvider} from 'react-scroll-parallax'
-import bg from '@images/hero-img.png'
-import BG from '@images/profile-pic.png'
 
 export default function Banner() {
     return (

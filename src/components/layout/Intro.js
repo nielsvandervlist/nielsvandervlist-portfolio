@@ -9,8 +9,7 @@ import {faArrowRightLong} from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
 
 export default function Intro() {
-
-
+    
     const sentence = ['Hi!', 'My', 'name', 'is', 'Niels.', 'I\'m ', 'a', 'web\n', 'developer', 'designer', 'and', 'Digital', 'Nerd.']
 
     return <div className={'relative'}>
