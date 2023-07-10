@@ -37,10 +37,10 @@ export default function MenuButton() {
 
                 <div className="flex flex-col items-center justify-center h-full">
                     <ul className={'text-center'}>
-                        <li onClick={() => setIsOpen(false)} className="text-3xl font-medium uppercase mb-8"><Link href={'/'}>Home</Link></li>
-                        <li onClick={() => setIsOpen(false)} className="text-3xl font-medium uppercase mb-8"><Link href={'/about'}>About</Link></li>
-                        <li onClick={() => setIsOpen(false)} className="text-3xl font-medium uppercase mb-8"><Link href={'/projects'}>Projects</Link></li>
-                        <li onClick={() => setIsOpen(false)} className="text-3xl font-medium uppercase"><Link href={'/contact'}>Contact</Link></li>
+                        <li onClick={() => setIsOpen(false)} className="text-5xl font-medium tracking-widest mb-16"><Link href={'/'}>Home</Link></li>
+                        <li onClick={() => setIsOpen(false)} className="text-5xl font-medium tracking-widest mb-16"><Link href={'/about'}>About</Link></li>
+                        <li onClick={() => setIsOpen(false)} className="text-5xl font-medium tracking-widest mb-16"><Link href={'/projects'}>Projects</Link></li>
+                        <li onClick={() => setIsOpen(false)} className="text-5xl font-medium tracking-widest"><Link href={'/contact'}>Contact</Link></li>
                     </ul>
                 </div>
             </motion.div>

@@ -15,8 +15,8 @@ export default function Page() {
         <div className={'md:grid p-4 md:p-20 grid-cols-12 gap-20  bg-gray-50'}>
             <div className={'col-span-7 mb-4 md:mb-0'}>
                 <div className={'max-w-[500px]'}>
-                    <h3 className={'text-text text-[24px] font-semibold mb-4'}>Welcome to The Circle,</h3>
-                    <p className={'relative w-full text-light-text font-light leading-8 mb-10'}>As a web developer, I am thrilled to present The Circle, a dynamic and engaging social media website designed to foster international dialogue and promote meaningful conversations on a global scale. This platform was carefully crafted with the intention of breaking down barriers and connecting individuals from diverse cultures and backgrounds. Through its intuitive interface and innovative features, The Circle aims to create a virtual space where ideas, perspectives, and experiences intertwine.</p>
+                    <h3 className={'text-text text-[24px] font-semibold mb-4'}>Welcome to Storymaker,</h3>
+                    <p className={'relative w-full text-light-text font-light leading-8 mb-10'}>At Storymaker, we understand the importance of storytelling in a childs development. It sparks creativity, enhances language skills, and nurtures a love for reading. However, we also recognize that not everyone has the time or expertise to craft engaging stories from scratch. Thats where our web application comes in.</p>
                 </div>
                 <figure className={'relative w-full'}>
                     <Image className={'rounded-xl drop-shadow-lg'} width={1628} height={744} src={Circle} alt={'circle'}/>
@@ -27,8 +27,8 @@ export default function Page() {
                     <Image className={'rounded-xl drop-shadow-lg'} src={Form} alt={'form'}/>
                 </figure>
                 <div className={'max-w-[500px]'}>
-                    <h3 className={'text-text text-[24px] font-semibold mb-4 mt-10'}>Global Discussions</h3>
-                    <p className={'relative w-full text-light-text font-light leading-8'}>The heart of The Circle lies in its comprehensive discussion forums. Users can participate in lively conversations about a wide range of international subjects, including culture, politics, travel, food, and more. These discussions are organized into topic-specific categories, making it easy for users to find and contribute to conversations that pique their interest.</p>
+                    <h3 className={'text-text text-[24px] font-semibold mb-4 mt-10'}>OpenAI</h3>
+                    <p className={'relative w-full text-light-text font-light leading-8'}>Using the cutting-edge capabilities of OpenAI, we have developed a user-friendly platform that empowers anyone to become a master storyteller. With just a few clicks, you can generate unique and compelling stories tailored to the interests and preferences of young readers.</p>
                 </div>
             </div>
             <div className={'col-span-6 mb-4 md:mb-0'}>
@@ -38,8 +38,8 @@ export default function Page() {
             </div>
             <div className={'col-span-6 mb-4 md:mb-0'}>
                 <div className={'max-w-[500px]'}>
-                    <h3 className={'text-text text-[24px] font-semibold mb-4 mt-10'}>Multilingual Support</h3>
-                    <p className={'relative w-full text-light-text font-light leading-8 mb-10'}>Recognizing the importance of inclusivity, The Circle supports multiple languages, enabling users from different parts of the world to interact in their preferred language. By breaking language barriers, we aim to foster a truly global community where everyone can express themselves and engage in meaningful dialogue.</p>
+                    <h3 className={'text-text text-[24px] font-semibold mb-4 mt-10'}>Child safety and content appropriateness</h3>
+                    <p className={'relative w-full text-light-text font-light leading-8 mb-10'}>As an organization, we are committed to child safety and content appropriateness. We have implemented strict guidelines to ensure that all stories generated through Storymaker are suitable for young readers, free from explicit or harmful content.</p>
                 </div>
             </div>
             <div className={'col-span-12 text-center my-8 md:my-0'}>

@@ -14,7 +14,8 @@ export default function Intro() {
 
     return <div className={'relative'}>
         <video autoPlay loop muted className={'absolute inset-0 w-full h-full object-fill'} src={'https://cdn.pixabay.com/vimeo/361092071/jellyfish-26818.mp4?width=1280&hash=d698fa9612131908c152247464bbc5e998d670eb'}/>
-        <div className={'absolute inset-0 bg-green-600 opacity-50'}/>
+        <div className={'absolute inset-0 bg-green-600 opacity-70 md:opacity-50'}/>
+        <div className={'absolute inset-0 md:hidden block bg-text opacity-50 md:opacity-50'}/>
         <motion.section
             initial="offscreen"
             whileInView="onscreen"
