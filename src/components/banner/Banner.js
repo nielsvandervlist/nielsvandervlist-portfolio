@@ -1,10 +1,11 @@
 import {ParallaxBanner, ParallaxProvider} from 'react-scroll-parallax'
+import {img} from '../../../public/images/bg-coffee.jpeg'
 
 export default function Banner() {
     return (
         <ParallaxProvider className={'w-full'}>
             <ParallaxBanner
-                layers={[{image: 'https://images.pexels.com/photos/1207918/pexels-photo-1207918.jpeg', speed: -50}]}
+                layers={[{image: 'images/bg-coffee.jpeg', speed: -50}]}P
                 className="md:aspect-[2/1] aspect-[1/2] flex items-center justify-center relative"
             >
                 <div className={'bg-green-600 opacity-75 absolute inset-0'}/>
