@@ -5,6 +5,7 @@ import Circle from '@images/bespoke-part.png'
 import Form from '@images/bespoke-host.png'
 import Chat from '@images/bespoke-term.png'
 import Timeline from '@images/bespoke-hero.png'
+import Link from 'next/link'
 
 export const metadata = {
     title: 'My Page Title',
@@ -46,8 +47,9 @@ export default function Page() {
                     <p className={'relative w-full text-light-text font-light leading-8 mb-10'}>In summary, Bespokeweb website encapsulates the essence of our company: cutting-edge design, intuitive navigation, and a focus on personalized experiences. It reflects our commitment to crafting bespoke digital solutions that empower businesses and drive success.</p>
                 </div>
             </div>
-            <div className={'col-span-12 text-center my-8 md:my-0'}>
+            <div className={'col-span-12 text-center my-8 md:my-0 flex justify-evenly'}>
                 <a className={'text-text md:text-[32px] text-[24px] font-semibold underline'} href={'/'}>Visit website</a>
+                <Link className={'underline'} href={'/pasar'}>Next Project</Link>
             </div>
         </div>
     </main>

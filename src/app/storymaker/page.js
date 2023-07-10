@@ -4,6 +4,7 @@ import HeroImg from '@images/ai-hero.png'
 import Circle from '@images/ai-question.png'
 import Form from '@images/ai-overview.png'
 import Chat from '@images/ai-hero.png'
+import Link from 'next/link'
 
 export const metadata = {
     title: 'My Page Title',
@@ -42,8 +43,9 @@ export default function Page() {
                     <p className={'relative w-full text-light-text font-light leading-8 mb-10'}>As an organization, we are committed to child safety and content appropriateness. We have implemented strict guidelines to ensure that all stories generated through Storymaker are suitable for young readers, free from explicit or harmful content.</p>
                 </div>
             </div>
-            <div className={'col-span-12 text-center my-8 md:my-0'}>
+            <div className={'col-span-12 text-center my-8 md:my-0 flex justify-evenly'}>
                 <a className={'text-text md:text-[32px] text-[24px] font-semibold underline'} href={'/'}>Visit website</a>
+                <Link className={'underline'} href={'/bespoke-web'}>Next Project</Link>
             </div>
         </div>
     </main>

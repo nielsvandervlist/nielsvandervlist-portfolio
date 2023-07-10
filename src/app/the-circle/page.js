@@ -6,6 +6,7 @@ import Form from '@images/circle-pic.png'
 import Chat from '@images/circle-dashboard.png'
 import Timeline from '@images/circle.png'
 import Homepage from '@images/circle-homepage.png'
+import Link from 'next/link'
 
 export const metadata = {
     title: 'My Page Title',
@@ -64,9 +65,9 @@ export default function Page() {
             </div>
             <div className={'col-span-6 mb-4 md:mb-0'}>
             </div>
-            <div className={'col-span-12 text-center my-8 md:my-0'}>
-                <a className={'text-text md:text-[32px] text-[24px] font-semibold underline'} href={'/'}>Visit
-                    website</a>
+            <div className={'col-span-12 text-center my-8 md:my-0 flex justify-evenly'}>
+                <a className={'text-text md:text-[32px] text-[24px] font-semibold underline'} href={'/'}>Visit website</a>
+                <Link className={'underline'} href={'/storymaker'}>Next Project</Link>
             </div>
         </div>
     </main>

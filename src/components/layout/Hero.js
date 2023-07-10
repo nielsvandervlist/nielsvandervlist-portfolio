@@ -8,7 +8,7 @@ import Bubble from '@components/transitions/Bubble'
 import {ParallaxProvider} from 'react-scroll-parallax'
 import MotionTracker from '@components/containers/MotionTracker'
 import PatternLayout from '@components/containers/PatternLayout'
-import {faKiwiBird} from '@fortawesome/free-solid-svg-icons'
+import {faFishFins} from '@fortawesome/free-solid-svg-icons'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 
 export default function Hero({children}) {
@@ -45,7 +45,7 @@ export default function Hero({children}) {
                         <motion.div variants={heroImg} className={'relative z-20 text-center'}>
                             <Image src={HeroImg} alt={'hero'}/>
                             <p className={'uppercase text-text font-light tracking-widest mt-20 flex md:block flex-col gap-8'}><span>Niels van der
-                                Vlist</span> <FontAwesomeIcon className={'text-xl mx-4'} icon={faKiwiBird}/> <span>developer &
+                                Vlist</span> <FontAwesomeIcon className={'text-xl mx-4'} icon={faFishFins}/> <span>developer &
                                 designer</span></p>
                         </motion.div>
                     </div>

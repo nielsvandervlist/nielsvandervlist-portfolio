@@ -5,6 +5,7 @@ import Circle from '@images/dash.png'
 import Chat from '@images/chat-dashboard.png'
 import Timeline from '@images/timeline-dashboard.png'
 import Form from '@images/dashboard-form.png'
+import Link from 'next/link'
 
 export const metadata = {
     title: 'My Page Title',
@@ -46,8 +47,9 @@ export default function Page() {
                     <Image className={'rounded-xl drop-shadow-lg'} src={Timeline} alt={'chat'}/>
                 </figure>
             </div>
-            <div className={'col-span-12 text-center my-8 md:my-0'}>
+            <div className={'col-span-12 text-center my-8 md:my-0 flex justify-evenly'}>
                 <a className={'text-text md:text-[32px] text-[24px] font-semibold underline'} href={'/'}>Visit website</a>
+                <Link className={'underline'} href={'/storymaker'}>Next Project</Link>
             </div>
         </div>
     </main>

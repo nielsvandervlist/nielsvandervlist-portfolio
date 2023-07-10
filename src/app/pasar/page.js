@@ -3,6 +3,7 @@ import HeroImg from '@images/pasar-logo.png'
 import Image from 'next/image'
 import Circle from '@images/pasar-homepage.png'
 import Chat from '@images/pasar-cards.png'
+import Link from 'next/link'
 
 export const metadata = {
     title: 'My Page Title',
@@ -30,8 +31,9 @@ export default function Page() {
                     <p className={'relative w-full text-light-text font-light leading-8'}>The integration of WordPress as the CMS enables festival organizers to efficiently manage and update content across the website. This includes adding new vendors, updating event schedules, publishing blog posts, and uploading visual media such as photos and videos. The WordPress backend offers a user-friendly interface for content editors, ensuring ease of use and efficient content management.</p>
                 </div>
             </div>
-            <div className={'col-span-12 text-center my-8 md:my-0'}>
-                <a className={'text-text md:text-[32px] text-[24px] font-semibold underline'} href={'https://pasar-leiden.vercel.app/'}>Visit website</a>
+            <div className={'col-span-12 text-center my-8 md:my-0 flex justify-evenly'}>
+                <a className={'text-text md:text-[32px] text-[24px] font-semibold underline'} href={'/'}>Visit website</a>
+                <Link className={'underline'} href={'/the-circle'}>Next Project</Link>
             </div>
         </div>
     </main>
