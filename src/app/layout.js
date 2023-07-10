@@ -9,7 +9,7 @@ import Footer from '@components/layout/Footer'
 config.autoAddCss = false
 
 export const metadata = {
-    title: 'Niels Test',
+    title: 'Niels van der Vlist PortFolio',
     description: 'Webdevelopment and webdesign',
 
 }
@@ -24,7 +24,7 @@ export default function RootLayout({children}) {
         <>
             <html lang="en">
             <head>
-                <title>Niels Test</title>
+                <title>Niels van der Vlist PortFolio</title>
                 <link rel="icon" href="favicon.ico" sizes="any" />
             </head>
                 <body className={poppins.className}>
