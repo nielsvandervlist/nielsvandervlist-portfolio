@@ -1,7 +1,6 @@
 import classNames from 'classnames'
 import Image from 'next/image'
 import BG from '@images/nv-pattern.svg'
-
 export default function Pattern({background, className}){
     return <div className={'relative w-[200vw]'}>
         <div className={`bg-green-200 bg-opacity-50 absolute inset-0`}/>
