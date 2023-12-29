@@ -17,7 +17,7 @@ export default function Banner() {
                         <p className={'text-white text-[18px] md:text-[24px] font-light mb-8 tracking-widest leading-loose'}>Just e-mail
                             me. We can grab a coffee.</p>
                         <a className={'underline font-bold text-white tracking-widest text-lg uppercase'}
-                           href={'mailto:niels.vder.vlist@gmail.com'}>nielsvandervlist@mail.com</a>
+                           href={'mailto:niels.vder.vlist@gmail.com'}>nielsvandervlist@gmail.com</a>
                     </div>
                 </div>
             </ParallaxBanner>

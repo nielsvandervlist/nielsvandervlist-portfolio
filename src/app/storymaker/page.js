@@ -12,7 +12,13 @@ export const metadata = {
 
 export default function Page() {
     return <main className="flex min-h-screen flex-col items-center justify-between">
-        <ProjectHero title={'The Circle'} label={'dashboard, social site'} image={HeroImg}/>
+        <ProjectHero
+            title={'Storymaker'}
+            label={'webapp, openai'}
+            image={HeroImg}
+            techs={['open-ai', 'next-js', 'motion-framer']}
+            designs={['sketch', 'midjourney', 'illustrator']}
+        />
         <div className={'md:grid p-4 md:p-20 grid-cols-12 gap-20  bg-gray-50'}>
             <div className={'col-span-7 mb-4 md:mb-0'}>
                 <div className={'max-w-[500px]'}>
@@ -34,7 +40,7 @@ export default function Page() {
             </div>
             <div className={'col-span-6 mb-4 md:mb-0'}>
                 <figure className={'relative w-full'}>
-                    <Image className={'rounded-xl drop-shadow-lg'} src={Chat} alt={'chat'}/>
+                    <Image src={Chat} alt={'hero-img'} width={'434'} height={'434'} className={'rounded-[35px] overflow-hidden'}/>
                 </figure>
             </div>
             <div className={'col-span-6 mb-4 md:mb-0'}>
@@ -44,7 +50,7 @@ export default function Page() {
                 </div>
             </div>
             <div className={'col-span-12 text-center my-8 md:my-0 flex justify-evenly'}>
-                <a className={'text-text md:text-[32px] text-[24px] font-semibold underline'} href={'/'}>Visit website</a>
+                <a target={'_blank'} className={'text-text md:text-[32px] text-[24px] font-semibold underline'} href={'https://storyteller-taupe.vercel.app/'}>Visit website</a>
                 <Link className={'underline'} href={'/bespoke-web'}>Next Project</Link>
             </div>
         </div>

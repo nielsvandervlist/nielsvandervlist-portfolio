@@ -53,8 +53,8 @@ export default function Intro() {
             <ParallaxProvider>
                 <div
                     className={'col-span-12 md:col-span-6 relative flex items-center justify-center order-1 mb-8 md:md-0'}>
-                    <figure className={'relative flex items-center justify-center rounded-full overflow-hidden'}>
-                        <Image className={'w-2/4 lg:w-[400px]'} src={BG} alt={'bg'}/>
+                    <figure className={'relative flex items-center justify-center'}>
+                        <Image className={'w-2/4 lg:w-[400px] rounded-full overflow-hidden'} src={BG} alt={'bg'}/>
                     </figure>
 
                 </div>

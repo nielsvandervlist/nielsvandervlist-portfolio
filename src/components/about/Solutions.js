@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function Solutions() {
     return <section
-        className={'h-screen bg-white py-8 px-[20px] md:py-[90px] md:px-[90px] w-full relative overflow-hidden'}
+        className={'bg-white py-8 px-[20px] md:py-[90px] md:px-[90px] w-full relative overflow-hidden'}
     >
         <div className={'grid grid-cols-12 gap-x-0 md:gap-x-20 z-20 relative flex justify-center h-full'}>
             <div className={'col-span-12 md:col-span-6 flex flex-col justify-center'}>

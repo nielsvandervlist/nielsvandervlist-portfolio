@@ -4,6 +4,7 @@ import Kids from '@images/kids.svg'
 import Bespoke from '@images/bespoke.svg'
 import Dash from '@images/dash.png'
 import Pasar from '@images/pasar-logo.png'
+import Goeswijn from '@images/goeswijn-menu.png'
 import Project from '@components/projects/Project'
 import {useState} from 'react'
 import Link from 'next/link'
@@ -39,6 +40,13 @@ export default function     PinterestLayout() {
             title: 'Crisis Dashboard',
             text: 'A groundbreaking web application, dedicated to transforming the way organizations handle communication crises.',
             link: 'crisis-dashboard',
+        },
+        {
+            img: Goeswijn,
+            label: 'Headless CMS, Wordpress Site',
+            title: 'Bistro Goeswijn',
+            text: 'Bistro Goeswijn, a charming French restaurant nestled in Leiden, now boasts an inviting online presence through a bespoke website crafted by our team. Designed and built by our skilled developers, the website captures the essence of Bistro Goeswijns French culinary delights.',
+            link: 'goeswijn',
         },
         {
             img: Pasar,

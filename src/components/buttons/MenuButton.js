@@ -4,6 +4,7 @@ import {motion} from 'framer-motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
+import Button from '@components/buttons/Button'
 
 export default function MenuButton() {
 
@@ -14,7 +15,7 @@ export default function MenuButton() {
     }
 
     return (
-        <div className="md:relative absolute right-4">
+        <div className="md:relative absolute right-4 flex gap-4">
             <button
                 className="font-semibold text-text z-10"
                 onClick={handleClick}
@@ -26,7 +27,7 @@ export default function MenuButton() {
                 initial={{ x: '100%' }}
                 animate={{ x: isOpen ? '0%' : '100%' }}
                 transition={{ duration: 0.3 }}
-                className="fixed inset-0 bg-green-100 text-text flex flex-col items-center justify-center z-20"
+                className="fixed inset-0 bg-green-100 text-text flex flex-col items-center justify-center z-40"
             >
                 <button
                     className="absolute top-4 right-4 font-semibold text-text z-30"
