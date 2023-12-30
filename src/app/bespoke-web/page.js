@@ -9,19 +9,26 @@ import Link from 'next/link'
 
 export const metadata = {
     title: 'My Page Title',
-};
+}
 
 export default function Page() {
     return <main className="flex min-h-screen flex-col items-center justify-between">
-        <ProjectHero title={'Bespokeweb'} label={'website'} image={HeroImg}/>
+        <ProjectHero title={'Bespokeweb'} label={'website'} image={HeroImg}
+                     techs={['next-js', 'motion-framer']}
+                     designs={['sketch', 'midjourney', 'illustrator']}/>
         <div className={'md:grid p-4 md:p-20 grid-cols-12 gap-20 bg-lightgray'}>
             <div className={'col-span-7 mb-4 md:mb-0'}>
                 <div className={'max-w-[500px]'}>
                     <h3 className={'text-text text-[24px] font-semibold mb-4'}>Welcome to Bespokeweb,</h3>
-                    <p className={'relative w-full text-light-text font-light leading-8 mb-10'}>As a passionate web developer, I take immense pride in introducing you to Bespokeweb, an exceptional web development company based in the vibrant city of Leiden. With a relentless commitment to innovation and an unwavering dedication to crafting unique online experiences, we bring your digital vision to life.</p>
+                    <p className={'relative w-full text-light-text font-light leading-8 mb-10'}>As a passionate web
+                        developer, I take immense pride in introducing you to Bespokeweb, an exceptional web development
+                        company based in the vibrant city of Leiden. With a relentless commitment to innovation and an
+                        unwavering dedication to crafting unique online experiences, we bring your digital vision to
+                        life.</p>
                 </div>
                 <figure className={'relative w-full'}>
-                    <Image className={'rounded-xl drop-shadow-lg'} width={1628} height={744} src={Timeline} alt={'circle'}/>
+                    <Image className={'rounded-xl drop-shadow-lg'} width={1628} height={744} src={Timeline}
+                           alt={'circle'}/>
                 </figure>
             </div>
             <div className={'col-span-5 mb-4 md:mb-0'}>
@@ -30,7 +37,10 @@ export default function Page() {
                 </figure>
                 <div className={'max-w-[500px]'}>
                     <h3 className={'text-text text-[24px] font-semibold mb-4 mt-10'}>Aesthetics and functionality</h3>
-                    <p className={'relative w-full text-light-text font-light leading-8'}>Our website showcases the seamless blend of aesthetics and functionality, setting the standard for modern web design. With a clean and intuitive user interface, visitors are greeted with a visually stunning experience that effortlessly guides them through our services, portfolio, and company information.</p>
+                    <p className={'relative w-full text-light-text font-light leading-8'}>Our website showcases the
+                        seamless blend of aesthetics and functionality, setting the standard for modern web design. With
+                        a clean and intuitive user interface, visitors are greeted with a visually stunning experience
+                        that effortlessly guides them through our services, portfolio, and company information.</p>
                 </div>
                 <figure className={'relative w-full mt-10'}>
                     <Image className={'rounded-xl drop-shadow-lg'} src={Chat} alt={'chat'}/>
@@ -44,11 +54,15 @@ export default function Page() {
             <div className={'col-span-6 mb-4 md:mb-0'}>
                 <div className={'max-w-[500px]'}>
                     <h3 className={'text-text text-[24px] font-semibold mb-4 mt-10'}>Cutting-edge design</h3>
-                    <p className={'relative w-full text-light-text font-light leading-8 mb-10'}>In summary, Bespokeweb website encapsulates the essence of our company: cutting-edge design, intuitive navigation, and a focus on personalized experiences. It reflects our commitment to crafting bespoke digital solutions that empower businesses and drive success.</p>
+                    <p className={'relative w-full text-light-text font-light leading-8 mb-10'}>In summary, Bespokeweb
+                        website encapsulates the essence of our company: cutting-edge design, intuitive navigation, and
+                        a focus on personalized experiences. It reflects our commitment to crafting bespoke digital
+                        solutions that empower businesses and drive success.</p>
                 </div>
             </div>
             <div className={'col-span-12 text-center my-8 md:my-0 flex justify-evenly'}>
-                <a className={'text-text md:text-[32px] text-[24px] font-semibold underline'} href={'/'}>Visit website</a>
+                <a className={'text-text md:text-[32px] text-[24px] font-semibold underline'} href={'/'}>Visit
+                    website</a>
                 <Link className={'underline'} href={'/pasar'}>Next Project</Link>
             </div>
         </div>

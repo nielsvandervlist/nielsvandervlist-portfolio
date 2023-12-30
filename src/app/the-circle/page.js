@@ -14,7 +14,9 @@ export const metadata = {
 
 export default function Page() {
     return <main className="flex min-h-screen flex-col items-center justify-between">
-        <ProjectHero title={'The Circle'} label={'dashboard, social site'} image={HeroImg}/>
+        <ProjectHero title={'The Circle'} label={'dashboard, social site'} image={HeroImg}
+                     techs={['next-js', 'motion-framer']}
+                     designs={['sketch', 'midjourney', 'illustrator']}/>
         <div className={'md:grid p-4 md:p-20 grid-cols-12 gap-20  border-t border-gray-200'}>
             <div className={'col-span-6 col-start-4 text-center'}>
                 <h3 className={'text-text text-[24px] font-semibold mb-4'}>Welcome to The Circle,</h3>
@@ -50,7 +52,8 @@ export default function Page() {
             <div className={'col-span-5 mb-4 md:mb-0'}>
                 <div className={'max-w-[500px]'}>
                     <h3 className={'text-text text-[24px] font-semibold mb-4 mt-10'}>Global Discussions</h3>
-                    <p className={'relative w-full text-light-text font-light leading-8 mb-8 md:mb-20'}>The heart of The Circle
+                    <p className={'relative w-full text-light-text font-light leading-8 mb-8 md:mb-20'}>The heart of The
+                        Circle
                         lies in its comprehensive discussion forums. Users can participate in lively conversations about
                         a wide range of international subjects, including culture, politics, travel, food, and more.
                         These discussions are organized into topic-specific categories, making it easy for users to find
@@ -66,7 +69,8 @@ export default function Page() {
             <div className={'col-span-6 mb-4 md:mb-0'}>
             </div>
             <div className={'col-span-12 text-center my-8 md:my-0 flex justify-evenly'}>
-                <a className={'text-text md:text-[32px] text-[24px] font-semibold underline'} href={'/'}>Visit website</a>
+                <a className={'text-text md:text-[32px] text-[24px] font-semibold underline'} href={'/'}>Visit
+                    website</a>
                 <Link className={'underline'} href={'/storymaker'}>Next Project</Link>
             </div>
         </div>

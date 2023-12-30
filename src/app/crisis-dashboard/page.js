@@ -13,7 +13,13 @@ export const metadata = {
 
 export default function Page() {
     return <main className="flex min-h-screen flex-col items-center justify-between">
-        <ProjectHero title={'Crisis dashboard'} label={'dashboard'} image={HeroImg}/>
+        <ProjectHero
+            title={'Crisis dashboard'}
+            label={'dashboard'}
+            image={HeroImg}
+            techs={['open-ai', 'next-js', 'motion-framer']}
+            designs={['sketch', 'midjourney', 'illustrator']}
+        />
         <div className={'md:grid p-4 md:p-20 grid-cols-12 gap-20 bg-lightgray'}>
             <div className={'col-span-7 mb-4 md:mb-0'}>
                 <div className={'max-w-[500px]'}>
