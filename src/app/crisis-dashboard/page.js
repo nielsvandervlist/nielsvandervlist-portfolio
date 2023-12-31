@@ -8,7 +8,7 @@ import Form from '@images/dashboard-form.png'
 import Link from 'next/link'
 
 export const metadata = {
-    title: 'My Page Title',
+    title: 'Crisis dashboard',
 }
 
 export default function Page() {
@@ -17,8 +17,8 @@ export default function Page() {
             title={'Crisis dashboard'}
             label={'dashboard'}
             image={HeroImg}
-            techs={['open-ai', 'next-js', 'motion-framer']}
-            designs={['sketch', 'midjourney', 'illustrator']}
+            techs={['laravel', 'next-js']}
+            designs={['sketch', 'illustrator']}
         />
         <div className={'md:grid p-4 md:p-20 grid-cols-12 gap-20 bg-lightgray'}>
             <div className={'col-span-7 mb-4 md:mb-0'}>
@@ -54,8 +54,8 @@ export default function Page() {
                 </figure>
             </div>
             <div className={'col-span-12 text-center my-8 md:my-0 flex justify-evenly'}>
-                <a className={'text-text md:text-[32px] text-[24px] font-semibold underline'} href={'/'}>Visit website</a>
-                <Link className={'underline'} href={'/storymaker'}>Next Project</Link>
+                <a className={'text-text md:text-[32px] text-[24px] font-semibold underline'} href={'https://crisis-app.vercel.app/'}>Visit website</a>
+                <Link className={'text-text md:text-[32px] text-[24px] font-semibold underline'} href={'/storymaker'}>Next Project</Link>
             </div>
         </div>
     </main>

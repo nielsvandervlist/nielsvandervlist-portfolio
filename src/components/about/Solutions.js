@@ -1,7 +1,5 @@
 'use client'
 import Accordion from '@components/about/Accordion'
-import Iso from '@images/iso.png'
-import Image from 'next/image'
 
 export default function Solutions() {
     return <section

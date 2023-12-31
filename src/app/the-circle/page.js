@@ -71,7 +71,7 @@ export default function Page() {
             <div className={'col-span-12 text-center my-8 md:my-0 flex justify-evenly'}>
                 <a className={'text-text md:text-[32px] text-[24px] font-semibold underline'} href={'/'}>Visit
                     website</a>
-                <Link className={'underline'} href={'/storymaker'}>Next Project</Link>
+                <Link className={'text-text md:text-[32px] text-[24px] font-semibold underline'} href={'/storymaker'}>Next Project</Link>
             </div>
         </div>
     </main>
