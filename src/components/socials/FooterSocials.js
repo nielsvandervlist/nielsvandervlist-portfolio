@@ -13,7 +13,7 @@ function FooterSocials({className}) {
                 </Link>
             </li>
             <li>
-                <Link href="https://github.com/">
+                <Link href="https://github.com/nielsvandervlist?tab=repositories">
                     <FontAwesomeIcon icon={faGithub} size="2x" />
                 </Link>
             </li>

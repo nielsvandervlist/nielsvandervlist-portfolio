@@ -1,5 +1,6 @@
 'use client'
 import Accordion from '@components/about/Accordion'
+import ThreeScene from '@components/transitions/ThreeScene'
 
 export default function Solutions() {
     return <section

@@ -61,7 +61,7 @@ export default function Page() {
                 </div>
             </div>
             <div className={'col-span-12 text-center my-8 md:my-0 flex justify-evenly'}>
-                <a className={'text-text md:text-[32px] text-[24px] font-semibold underline'} href={'/'}>Visit
+                <a className={'text-text md:text-[32px] text-[24px] font-semibold underline'} href={'https://bespokeweb.nl/'}>Visit
                     website</a>
                 <Link className={'text-text md:text-[32px] text-[24px] font-semibold underline'} href={'/ai-for-kids'}>Next Project</Link>
             </div>

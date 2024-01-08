@@ -1,10 +1,10 @@
 'use client'
 import Circle from '@images/circle.png'
 import Kids from '@images/kids.svg'
-import AiKids from '@images/kids-home.png'
+import AiKids from '@images/kids-overview-card.png'
 import Bespoke from '@images/bespoke.svg'
 import Dash from '@images/dash.png'
-import Pasar from '@images/pasar-logo.png'
+import Pasar from '@images/pasar-homepage-cards.png'
 import Goeswijn from '@images/goeswijn-menu.png'
 import Project from '@components/projects/Project'
 import {useState} from 'react'
@@ -12,13 +12,6 @@ import {useState} from 'react'
 export default function     PinterestLayout() {
 
     const [animate, setAnimate] = useState([
-        {
-            img: Circle,
-            label: 'website, social platform',
-            title: 'The Circle',
-            text: 'This platform was carefully crafted with the intention of breaking down barriers and connecting individuals from diverse cultures and backgrounds.',
-            link: 'the-circle',
-        },
         {
             img: Kids,
             label: 'website, artificial intelligence',
@@ -60,6 +53,13 @@ export default function     PinterestLayout() {
             title: 'Ai for Kids',
             text: 'The Pasar Leiden website serves as a digital platform to promote the festival, provide essential information, and engage with attendees and vendors. The design of the website is visually appealing and reflects the vibrant and cultural aspects of the Indonesian food festival.',
             link: 'ai-for-kids',
+        },
+        {
+            img: Circle,
+            label: 'website, social platform',
+            title: 'The Circle',
+            text: 'This platform was carefully crafted with the intention of breaking down barriers and connecting individuals from diverse cultures and backgrounds.',
+            link: 'the-circle',
         },
     ])
 
